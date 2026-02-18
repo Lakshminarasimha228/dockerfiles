@@ -1,8 +1,8 @@
 ARG version
 FROM almalinux:${version:-9}
-ENV COURSE="DevOps" \
-    DURATION="120HRS"
-ARG TRAINER="Sivakumar"
-ENV TRAINER=$TRAINER
-RUN echo "hi, Course is :${COURSE}, duration is : ${DURATION}, trainer is : ${TRAINER}, version: ${version}"
+ENV course="devops" \
+    duration="120hrs"
+ARG trainer="sivakumar"
+ENV trainer=$trainer
+RUN echo "Hi, Course is: ${course}, duration is: ${duration}, trainer is: ${trainer}, version: ${version}"
 CMD ["sleep", "1000"]
