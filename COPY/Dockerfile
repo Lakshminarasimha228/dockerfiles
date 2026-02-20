@@ -5,9 +5,6 @@
 # RUN chmod +r /usr/share/nginx/html/index.html
 # CMD ["nginx", "-g", "daemon off;"]
 
-
-
-
 # FROM almalinux:9
 
 # RUN dnf install nginx -y && \
@@ -41,6 +38,4 @@ RUN chmod +r /usr/share/nginx/html/over.css
 RUN chmod +r /usr/share/nginx/html/restart.js
 RUN chmod +r /usr/share/nginx/html/restart.css
 RUN chmod +r /usr/share/nginx/html/README.md
-
-
 CMD ["nginx", "-g", "daemon off;"]
